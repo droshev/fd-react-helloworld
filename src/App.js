@@ -1,15 +1,44 @@
 import React, { Component } from 'react';
 import './App.scss';
-import { Alert } from 'fundamental-react/dist/Alert/Alert';
+import { ActionBar, ActionBarHeader, ActionBarBack } from 'fundamental-react/dist/ActionBar/ActionBar';
+import { Button } from 'fundamental-react/dist/Button/Button';
+import { Route, Link } from 'react-router-dom';
+
+const Page1 = () => (
+    <div class="fd-shell">
+        <ActionBar>
+            <ActionBarHeader title={'Hello World!'} />
+        </ActionBar>
+
+        <div class="fd-shell__app">
+            <div class="fd-app">
+                <main class="fd-app__main">
+                    <Link to="/page2">
+                        <Button>Go to Page 2</Button>
+                    </Link>
+                </main>
+            </div>
+        </div>
+    </div>
+);
+
+const Page2 = () => (
+    <div class="fd-shell">
+        <ActionBar>
+            <Link to="">
+                <ActionBarBack />
+            </Link>
+            <ActionBarHeader title={'Hello Page2!'} />
+        </ActionBar>
+    </div>
+);
 
 class App extends Component {
     render() {
         return (
             <div className="App">
-                Test
-                <Alert dismissable={true} link="#" linkText="link">
-                    Default alert
-                </Alert>
+                <Route exact path="/" component={Page1} />
+                <Route path="/page2" component={Page2} />
             </div>
         );
     }

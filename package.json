@@ -4,7 +4,7 @@
     "private": true,
     "dependencies": {
         "fiori-fundamentals": "^1.3.2",
-        "fundamental-react": "0.0.5-beta",
+        "fundamental-react": "0.0.6-beta",
         "node-sass": "^4.10.0",
         "react": "^16.6.3",
         "react-dom": "^16.6.3",
