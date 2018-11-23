@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/droshev/fd-react-helloworld/precache-manifest.6271e3db8ea65e65180feb94888b85e6.js"
+  "/droshev/fd-react-helloworld/fd-react-helloworld/precache-manifest.81217c4ab9bb7b7d3fc1bb994c6a7341.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/droshev/fd-react-helloworld/index.html", {
+workbox.routing.registerNavigationRoute("/droshev/fd-react-helloworld/fd-react-helloworld/index.html", {
   
   blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
 });
