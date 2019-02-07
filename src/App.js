@@ -1,7 +1,11 @@
 import React, { Component } from 'react';
 import './App.scss';
-import { ActionBar, ActionBarHeader, ActionBarBack } from 'fundamental-react/dist/ActionBar/ActionBar';
-import { Button } from 'fundamental-react/dist/Button/Button';
+import {
+    ActionBar,
+    ActionBarHeader,
+    ActionBarBack,
+    Button
+} from 'fundamental-react';
 import { Route, Link } from 'react-router-dom';
 
 const Page1 = () => (
